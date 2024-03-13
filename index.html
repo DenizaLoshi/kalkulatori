@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+    <div class="container">
+        <!-- Display -->
+        <div class="display" id="display">
+            0
+        </div>
+
+        <!-- Keyboard -->
+
+        <!-- operator keys -->
+        <div class="operatorKeys">
+            <button class="add" id="btnKey" onclick="operatorat('+')">+</button>
+            <button class="subtract" id="btnKey" onclick="operatorat('-')">-</button>
+            <button class="multiply" id="btnKey" onclick="operatorat('*')">*</button>
+            <button class="divide" id="btnKey" onclick="operatorat(':')">:</button>
+        </div>
+
+            <!-- numbers -->
+        <div class="numberKeyboard">
+            <button class="numbers" id="btnNumber0" onclick="appendToDisplay('0')">0</button>
+            <button class="numbers" id="btnNumber1" onclick="appendToDisplay('1')">1</button>
+            <button class="numbers" id="btnNumber2" onclick="appendToDisplay('2')">2</button>
+            <button class="numbers" id="btnNumber3" onclick="appendToDisplay('3')">3</button>
+            <button class="numbers" id="btnNumber4" onclick="appendToDisplay('4')">4</button>
+            <button class="numbers" id="btnNumber5" onclick="appendToDisplay('5')">5</button>
+            <button class="numbers" id="btnNumber6" onclick="appendToDisplay('6')">6</button>
+            <button class="numbers" id="btnNumber7" onclick="appendToDisplay('7')">7</button>
+            <button class="numbers" id="btnNumber8" onclick="appendToDisplay('8')">8</button>
+            <button class="numbers" id="btnNumber9" onclick="appendToDisplay('9')">9</button>
+
+        </div>
+
+            <!-- Other -->
+        <div class="other">
+            <button class="decimal_number" id="btnFloatNumber" onclick="parseFloat()">,</button>
+            <button class="clear" id="btnClear" onclick="clearDisplay()">Clear</button>
+            <button class="calculate"
+            id="btnCalc" onclick="calculateNumbers()">=</button>
+        </div>
+    </div>
+</body>
+</html>
+<!--  -->
